@@ -58,7 +58,7 @@ public class RegisterService implements UserDetailsService {
         user.setEmail(registerDto.getEmail());
         user.setPassword(encoder.encode(registerDto.getPassword()));
         user.setRoleList(Collections.singleton(roleRepository.findByRoleName(RoleName.USER)));
-        if (user.getEmail().equals("shoxruxsindarov1996@gmail.com")) {
+        if (user.getEmail().equals("lskjflsdflkjsdfjs@gmail.com")) {
             Set<PermissionEnum> adminPermission = new HashSet<>(Arrays.asList(
                     PermissionEnum.ADD_MESSAGE, PermissionEnum.EDIT_MESSAGE, PermissionEnum.GET_MESSAGE,
                     PermissionEnum.DELETE_MY_MESSAGE, PermissionEnum.GET_OWN_INFORMATION,
